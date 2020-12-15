@@ -9,19 +9,19 @@
  ************************************************************************************/
 
 $mod_strings = array(
-	'wcProductCategory' => 'Product Category',
-	'SINGLE_wcProductCategory' => 'Product Category',
+	'wcProductCategory' => 'Categoría Producto WooC',
+	'SINGLE_wcProductCategory' => 'Categoría Producto WooC',
 
-	'LBL_CUSTOM_INFORMATION' => 'Custom Information',
-	'LBL_WCPRODUCTCATEGORY_INFORMATION' => 'Product Category Information',
-	'LBL_DESCRIPTION_INFORMATION' => 'Description',
+	'LBL_CUSTOM_INFORMATION' => 'Custom Información Personalizada',
+	'LBL_WCPRODUCTCATEGORY_INFORMATION' => 'Información Categoría Producto',
+	'LBL_DESCRIPTION_INFORMATION' => 'Descripción',
 	'LBL_WC_INFORMATION' => 'WooCommerce',
 
-	'wcsyncstatus' => 'WC Sync status',
-	'wccode' => 'WC Code',
-	'wcurl' => 'WC Url',
-	'wccreated' => 'WC Created',
-	'wcdeleted' => 'WC Deleted',
-	'wcdeletedon' => 'WC Delete on',
+	'wcsyncstatus' => 'Estado Sincronización',
+	'wccode' => 'Código WooC',
+	'wcurl' => 'URL WooC',
+	'wccreated' => 'Creado WooC',
+	'wcdeleted' => 'Borrado WooC',
+	'wcdeletedon' => 'Borrado el',
 );
 ?>
