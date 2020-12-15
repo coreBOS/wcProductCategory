@@ -76,10 +76,6 @@ PRIMARY KEY (`wcproductcategoryid`)
           <quickcreate>1</quickcreate>
           <displaytype>1</displaytype>
           <masseditable>1</masseditable>
-          <entityidentifier>
-            <entityidfield>wcproductcategoryid</entityidfield>
-            <entityidcolumn>wcproductcategoryid</entityidcolumn>
-          </entityidentifier>
         </field>
         <field>
           <fieldname>category_name</fieldname>
@@ -95,6 +91,10 @@ PRIMARY KEY (`wcproductcategoryid`)
           <quickcreate>0</quickcreate>
           <displaytype>1</displaytype>
           <masseditable>1</masseditable>
+          <entityidentifier>
+            <entityidfield>wcproductcategoryid</entityidfield>
+            <entityidcolumn>wcproductcategoryid</entityidcolumn>
+          </entityidentifier>
         </field>
         <field>
           <fieldname>slug</fieldname>

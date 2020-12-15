@@ -67,7 +67,7 @@ class wcProductCategory extends CRMEntity {
 	);
 
 	// Make the field link to detail view from list view (Fieldname)
-	public $list_link_field = 'wcproductcategoryno';
+	public $list_link_field = 'category_name';
 
 	// For Popup listview and UI type support
 	public $search_fields = array(
@@ -89,28 +89,28 @@ class wcProductCategory extends CRMEntity {
 	);
 
 	// For Popup window record selection
-	public $popup_fields = array('wcproductcategoryno');
+	public $popup_fields = array('category_name');
 
 	// Placeholder for sort fields - All the fields will be initialized for Sorting through initSortFields
 	public $sortby_fields = array();
 
 	// For Alphabetical search
-	public $def_basicsearch_col = 'wcproductcategoryno';
+	public $def_basicsearch_col = 'category_name';
 
 	// Column value to use on detail view record text display
-	public $def_detailview_recname = 'wcproductcategoryno';
+	public $def_detailview_recname = 'category_name';
 
 	// Required Information for enabling Import feature
-	public $required_fields = array('wcproductcategoryno'=>1);
+	public $required_fields = array('category_name'=>1);
 
 	// Callback function list during Importing
 	public $special_functions = array('set_import_assigned_user');
 
-	public $default_order_by = 'wcproductcategoryno';
+	public $default_order_by = 'category_name';
 	public $default_sort_order='ASC';
 	// Used when enabling/disabling the mandatory fields for the module.
 	// Refers to vtiger_field.fieldname values.
-	public $mandatory_fields = array('createdtime', 'modifiedtime', 'wcproductcategoryno');
+	public $mandatory_fields = array('createdtime', 'modifiedtime', 'category_name');
 
 	public function save_module($module) {
 		if ($this->HasDirectImageField) {
