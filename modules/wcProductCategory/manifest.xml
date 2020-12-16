@@ -131,7 +131,7 @@ PRIMARY KEY (`wcproductcategoryid`)
         </field>
         <field>
           <fieldname>display</fieldname>
-          <uitype>16</uitype>
+          <uitype>15</uitype>
           <columnname>display</columnname>
           <tablename>vtiger_wcproductcategory</tablename>
           <generatedtype>1</generatedtype>
@@ -144,6 +144,7 @@ PRIMARY KEY (`wcproductcategoryid`)
           <displaytype>1</displaytype>
           <masseditable>1</masseditable>
           <picklistvalues>
+            <picklistvalue>default</picklistvalue>
             <picklistvalue>products</picklistvalue>
             <picklistvalue>subcategories</picklistvalue>
             <picklistvalue>both</picklistvalue>
