@@ -127,6 +127,15 @@ class wcProductCategory extends CRMEntity {
 		if ($event_type == 'module.postinstall') {
 			// Handle post installation actions
 			$this->setModuleSeqNumber('configure', $modulename, 'WCCat-', '0000001');
+			$modPdo=Vtiger_Module::getInstance('Products');
+			$modSrv=Vtiger_Module::getInstance('Services');
+			$modMod=Vtiger_Module::getInstance($modulename);
+			if ($modPdo) {
+				$modPdo->setRelatedList($modMod, $modulename, array('ADD','SELECT'), 'get_related_list');
+			}
+			if ($modSrv) {
+				$modSrv->setRelatedList($modMod, $modulename, array('ADD','SELECT'), 'get_related_list');
+			}
 		} elseif ($event_type == 'module.disabled') {
 			// Handle actions when this module is disabled.
 		} elseif ($event_type == 'module.enabled') {
